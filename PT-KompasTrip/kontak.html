@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KompasTrip Indonesia | Kontak</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-badge"></span>
+        KompasTrip Indonesia
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="paket/index.html">Paket Wisata</a>
+        <a href="corporate.html">Corporate</a>
+        <a href="blog/index.html">Blog</a>
+        <a class="active" href="kontak.html">Kontak</a>
+      </nav>
+      <a class="nav-cta" href="kontak.html">WhatsApp Admin</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+    <header>
+      <strong>Menu</strong>
+      <button class="btn btn-secondary" data-menu-close>Tutup</button>
+    </header>
+    <nav class="menu-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="paket/index.html">Paket Wisata</a>
+      <a href="corporate.html">Corporate</a>
+      <a href="blog/index.html">Blog</a>
+      <a class="active" href="kontak.html">Kontak</a>
+    </nav>
+    <div class="menu-cta">
+      <a class="btn btn-primary" href="kontak.html">Konsultasi Trip</a>
+      <a class="btn btn-secondary" href="kontak.html">WhatsApp Admin</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h1 class="hero-title">Hubungi Kami</h1>
+          <p class="hero-subtitle">Ceritakan kebutuhan trip kamu, kami bantu siapkan itinerary terbaik.</p>
+          <div class="button-group">
+            <a class="btn btn-primary" href="#form-kontak">Kirim Pesan</a>
+            <a class="btn btn-secondary" href="kontak.html">WhatsApp Admin</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="img-wrap" style="aspect-ratio: 4 / 3;">
+            <img src="assets/images/hero-travel.svg" alt="Ilustrasi layanan KompasTrip" width="1200" height="800" loading="eager" data-fade />
+          </div>
+          <h3>Info Kantor</h3>
+          <p>Jl. Contoh Raya No. 123, Jakarta Selatan</p>
+          <p>Jam kerja: 09.00 - 18.00 WIB</p>
+          <p>Instagram: @kompastrip.id</p>
+          <p>LinkedIn: KompasTrip Indonesia</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="form-kontak" data-animate>
+      <div class="container">
+        <h2 class="section-title">Form Kontak</h2>
+        <div class="form-card reveal">
+          <form class="form-grid two-cols">
+            <input class="input" type="text" placeholder="Nama" required />
+            <input class="input" type="email" placeholder="Email" required />
+            <input class="input" type="text" placeholder="Perusahaan (opsional)" />
+            <input class="input" type="text" placeholder="Kebutuhan" required />
+            <input class="input" type="text" placeholder="Lokasi" required />
+            <button class="btn btn-primary" type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PT KompasTrip Indonesia</h3>
+        <p>Partner perjalanan dengan itinerary rapi, harga transparan, dan support responsif.</p>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <p>Paket Wisata</p>
+        <p>Private Trip</p>
+        <p>Open Trip</p>
+        <p>Outing Korporat</p>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>WhatsApp: 0812-0000-2026</p>
+        <p>Email: hello@kompastrip.id</p>
+        <p>Jam kerja: 09.00 - 18.00 WIB</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab-whatsapp" href="kontak.html">Tanya Admin via WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>

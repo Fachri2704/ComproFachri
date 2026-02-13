@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KompasTrip Indonesia | Paket Wisata</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html">
+        <span class="logo-badge"></span>
+        KompasTrip Indonesia
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">Beranda</a>
+        <a href="../tentang.html">Tentang Kami</a>
+        <a class="active" href="index.html">Paket Wisata</a>
+        <a href="../corporate.html">Corporate</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../kontak.html">Kontak</a>
+      </nav>
+      <a class="nav-cta" href="../kontak.html">WhatsApp Admin</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+    <header>
+      <strong>Menu</strong>
+      <button class="btn btn-secondary" data-menu-close>Tutup</button>
+    </header>
+    <nav class="menu-links">
+      <a href="../index.html">Beranda</a>
+      <a href="../tentang.html">Tentang Kami</a>
+      <a class="active" href="index.html">Paket Wisata</a>
+      <a href="../corporate.html">Corporate</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../kontak.html">Kontak</a>
+    </nav>
+    <div class="menu-cta">
+      <a class="btn btn-primary" href="../kontak.html">Konsultasi Trip</a>
+      <a class="btn btn-secondary" href="../kontak.html">WhatsApp Admin</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h1 class="hero-title">Paket Wisata Terbaik</h1>
+          <p class="hero-subtitle">Pilih destinasi, durasi, dan tipe trip sesuai kebutuhan.</p>
+        </div>
+        <div class="hero-card">
+          <div class="img-wrap" style="aspect-ratio: 4 / 3;">
+            <img src="../assets/images/hero-travel.svg" alt="Ilustrasi paket wisata" width="1200" height="800" loading="eager" data-fade />
+          </div>
+          <h3>Filter Cepat</h3>
+          <p>Gunakan filter untuk menyesuaikan budget dan durasi trip kamu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-animate>
+      <div class="container">
+        <form class="filter-bar" data-filter-form>
+          <select class="select" name="destinasi">
+            <option value="">Destinasi</option>
+            <option value="bali">Bali</option>
+            <option value="labuanbajo">Labuan Bajo</option>
+            <option value="lombok">Lombok</option>
+            <option value="jogja">Jogja</option>
+            <option value="bromo">Bromo</option>
+            <option value="rajaampat">Raja Ampat</option>
+          </select>
+          <select class="select" name="durasi">
+            <option value="">Durasi</option>
+            <option value="2d1n">2D1N</option>
+            <option value="3d2n">3D2N</option>
+            <option value="4d3n">4D3N</option>
+          </select>
+          <select class="select" name="tipe">
+            <option value="">Tipe</option>
+            <option value="open">Open Trip</option>
+            <option value="private">Private Trip</option>
+          </select>
+          <select class="select" name="budget">
+            <option value="">Anggaran</option>
+            <option value="low">Di bawah 2jt</option>
+            <option value="mid">2-5jt</option>
+            <option value="high">Di atas 5jt</option>
+          </select>
+        </form>
+
+        <div class="card-grid">
+          <div class="card paket-card reveal" data-paket-card data-destinasi="bali" data-durasi="3d2n" data-tipe="private" data-budget="mid">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-1.svg" alt="Paket Wisata Bali Healing 3D2N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Bali Healing 3D2N</h3>
+            <p>Harga mulai: Rp 2.950.000</p>
+            <p>Highlight: Uluwatu, Nusa Dua.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="labuanbajo" data-durasi="4d3n" data-tipe="open" data-budget="high">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-2.svg" alt="Paket Wisata Labuan Bajo Komodo 4D3N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Labuan Bajo Komodo 4D3N</h3>
+            <p>Harga mulai: Rp 5.750.000</p>
+            <p>Highlight: Sailing, Pink Beach.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="jogja" data-durasi="2d1n" data-tipe="open" data-budget="low">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-3.svg" alt="Paket Wisata Jogja Heritage 2D1N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Jogja Heritage 2D1N</h3>
+            <p>Harga mulai: Rp 1.250.000</p>
+            <p>Highlight: Keraton, Malioboro.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="bromo" data-durasi="2d1n" data-tipe="private" data-budget="low">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-4.svg" alt="Paket Wisata Bromo Sunrise 2D1N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Bromo Sunrise 2D1N</h3>
+            <p>Harga mulai: Rp 1.850.000</p>
+            <p>Highlight: Sunrise Penanjakan.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="lombok" data-durasi="3d2n" data-tipe="private" data-budget="mid">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-5.svg" alt="Paket Wisata Lombok Culture 3D2N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Lombok Culture 3D2N</h3>
+            <p>Harga mulai: Rp 2.600.000</p>
+            <p>Highlight: Gili, Sade Village.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="rajaampat" data-durasi="4d3n" data-tipe="open" data-budget="high">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-6.svg" alt="Paket Wisata Raja Ampat Explorer 4D3N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Raja Ampat Explorer 4D3N</h3>
+            <p>Harga mulai: Rp 8.900.000</p>
+            <p>Highlight: Piaynemo, snorkeling.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="bali" data-durasi="2d1n" data-tipe="open" data-budget="low">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-7.svg" alt="Paket Wisata Bali Budget Escape 2D1N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Bali Budget Escape 2D1N</h3>
+            <p>Harga mulai: Rp 1.450.000</p>
+            <p>Highlight: Beach club & kuliner.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="labuanbajo" data-durasi="3d2n" data-tipe="private" data-budget="high">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-8.svg" alt="Paket Wisata Labuan Bajo Private 3D2N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Labuan Bajo Private 3D2N</h3>
+            <p>Harga mulai: Rp 6.500.000</p>
+            <p>Highlight: Private boat, sunset trip.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="jogja" data-durasi="3d2n" data-tipe="private" data-budget="mid">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-9.svg" alt="Paket Wisata Jogja Kuliner 3D2N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Jogja Kuliner 3D2N</h3>
+            <p>Harga mulai: Rp 2.050.000</p>
+            <p>Highlight: City tour + night market.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="lombok" data-durasi="4d3n" data-tipe="open" data-budget="mid">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-10.svg" alt="Paket Wisata Lombok Adventure 4D3N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Lombok Adventure 4D3N</h3>
+            <p>Harga mulai: Rp 3.750.000</p>
+            <p>Highlight: Trekking & island hopping.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+          <div class="card paket-card reveal" data-paket-card data-destinasi="bromo" data-durasi="3d2n" data-tipe="open" data-budget="mid">
+            <div class="card-media">
+              <div class="img-wrap">
+                <img src="../assets/images/paket-11.svg" alt="Paket Wisata Bromo + Malang 3D2N" width="1200" height="800" loading="lazy" data-fade />
+              </div>
+            </div>
+            <span class="badge">Terlaris</span>
+            <h3>Bromo + Malang 3D2N</h3>
+            <p>Harga mulai: Rp 2.450.000</p>
+            <p>Highlight: Sunrise + city tour.</p>
+            <a class="btn btn-secondary" href="bali-3d2n.html">Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PT KompasTrip Indonesia</h3>
+        <p>Partner perjalanan dengan itinerary rapi, harga transparan, dan support responsif.</p>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <p>Paket Wisata</p>
+        <p>Private Trip</p>
+        <p>Open Trip</p>
+        <p>Outing Korporat</p>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>WhatsApp: 0812-0000-2026</p>
+        <p>Email: hello@kompastrip.id</p>
+        <p>Jam kerja: 09.00 - 18.00 WIB</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab-whatsapp" href="../kontak.html">Tanya Admin via WhatsApp</a>
+  <script src="../script.js"></script>
+</body>
+</html>
